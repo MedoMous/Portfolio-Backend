@@ -1,0 +1,127 @@
+GET http://localhost:8080/api/v1/software-engineers
+
+###
+POST http://localhost:8080/api/v1/software-engineers
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Fethi 9ahir lftayaat",
+  "techStack": "Java , Data-Scientist , Data-Mining"
+}
+
+###
+GET http://localhost:8080/api/v1/software-engineers/10
+
+###
+DELETE http://localhost:8080/api/v1/software-engineers/4
+
+###
+PUT http://localhost:8080/api/v1/software-engineers/12
+Content-Type: application/json
+
+{
+  "name": "Fethi lghayr 9ahir lftayaat",
+  "techStack": "Java , Machine-learning , n8n automation , Data-Scientist",
+  "email": "Fethi.Absi@gmail.com"
+}
+
+###
+GET http://localhost:8080/api/v1/clients
+
+###
+POST http://localhost:8080/api/v1/clients
+
+###
+DELETE http://localhost:8080/api/v1/clients/3
+
+###
+PUT http://localhost:8080/api/v1/clients/4
+Content-Type: application/json
+
+{
+  "name": "Boukraa Mohamed",
+  "email": "bkrmed@gmail.com",
+  "wantedProduct": "application that spots hot girls so he can talk to them"
+}
+
+###
+POST http://localhost:8080/api/v1/orders
+Content-Type: application/json
+
+{
+  "clientId": 1,
+  "engineerIds": [4 , 6 , 8],
+  "projectName": "E-commerce Website",
+  "estimatedDays": 60,
+  "startDate": "2025-12-01",
+  "deadline": "2026-02-01"
+}
+
+###
+GET http://localhost:8080/api/v1/orders
+
+###
+GET http://localhost:8080/api/v1/orders/1
+
+###
+PUT http://localhost:8080/api/v1/orders/1
+COntent-Type: application/json
+
+{
+  "deadline": "2026-04-02",
+  "startDate": "2026-01-15",
+  "estimatedDays": 77,
+  "projectName": "Damiri",
+  "clientId": 1
+}
+
+###
+DELETE http://localhost:8080/api/v1/orders/2
+
+###
+GET http://localhost:8080/api/v1/questions
+
+###
+GET http://localhost:8080/api/v1/questions/1
+
+###
+POST http://localhost:8080/api/v1/questions
+Content-Type: application/json
+
+{
+  "email": "mmous1258@gmail.com",
+  "question": "Hi/Salam Aliakom, my question is what you up to next? are going to master what you doing now or you you're going to learn something like Angular or .NET if you know what I mean, if yes please let me know how you going to do it ?"
+}
+
+###
+PUT http://localhost:8080/api/v1/questions/2
+Content-Type: application/json
+
+{
+  "question": "Hi/Salam Alaikom, my question is what you up to next? are going to master what you doing now or you you're going to learn something like Angular or .NET if you know what I mean, if yes please let me know how you going to do it ? Jazak Alaho Khayran Akhi"
+}
+
+###
+DELETE http://localhost:8080/api/v1/questions/1
+
+###
+GET http://localhost:8080/api/v1/contacts/unread
+
+###
+GET http://localhost:8080/api/v1/contacts/2
+
+###
+POST http://localhost:8080/api/v1/contacts
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/api/v1/contacts/2/unlike
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/api/v1/contacts/2/like
+Content-Type: application/json
+
+###
+DELETE http://localhost:8080/api/v1/contacts/1
