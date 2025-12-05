@@ -11,4 +11,6 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+
+# Convert DATABASE_URL to JDBC format
+ENTRYPOINT sh -c 'export JDBC_DATABASE_URL=$(echo $DATABASE_URL | sed "s/^postgres:/jdbc:postgresql:/") && java -jar app.jar'
