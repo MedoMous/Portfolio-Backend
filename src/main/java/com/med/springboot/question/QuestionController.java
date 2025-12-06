@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/questions")
-@CrossOrigin(origins = "https://portfolio-mauve-xi-59.vercel.app/")
+@CrossOrigin(origins = "https://portfolio-mauve-xi-59.vercel.app")
 public class QuestionController {
     @Autowired
     private QuestionService service;

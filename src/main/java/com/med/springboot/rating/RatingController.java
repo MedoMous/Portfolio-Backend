@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/ratings")
-@CrossOrigin(origins = "https://portfolio-mauve-xi-59.vercel.app/")
+@CrossOrigin(origins = "https://portfolio-mauve-xi-59.vercel.app")
 public class RatingController {
     @Autowired
     private RatingService service;

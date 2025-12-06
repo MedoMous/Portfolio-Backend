@@ -6,7 +6,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/contacts")
-@CrossOrigin(origins = "https://portfolio-mauve-xi-59.vercel.app/")
+@CrossOrigin(origins = "https://portfolio-mauve-xi-59.vercel.app")
 public class ContactMessageController {
     @Autowired
     private ContactMessageService service;
