@@ -12,9 +12,9 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/api/**")
                 .allowedOrigins(
                         "http://localhost:5173",
-                        "https://your-vercel-app.vercel.app"  // Replace with YOUR actual Vercel URL
+                        "https://portfolio-mauve-xi-59.vercel.app/"  // Replace with YOUR actual Vercel URL
                 )
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS" , "PATCH")
                 .allowedHeaders("*")
                 .allowCredentials(true);
     }
